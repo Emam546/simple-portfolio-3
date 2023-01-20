@@ -1,0 +1,108 @@
+.special-heading {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 10px 15px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 40px;
+    position: relative;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    user-select: none;
+    background-color: transparent;
+    z-index: 20;
+}
+
+.special-heading::before,
+.special-heading::after {
+    content: "";
+    background-color: var(--main-color);
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+    transform: translateY(-50%);
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
+}
+
+.special-heading::before {
+    left: -30px;
+}
+
+.special-heading::after {
+    right: -30px;
+}
+
+.special-heading:hover::after {
+    animation-name: special-coloring-right;
+}
+
+.special-heading:hover::before {
+    animation-name: special-coloring-left;
+}
+
+.special-heading:hover {
+    animation-name: special-coloring-font;
+}
+
+@keyframes special-coloring-right {
+    39.9% {
+        right: 0px;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+    }
+
+    40% {
+        right: 0px;
+        height: 70%;
+        border-radius: 0;
+    }
+
+    100% {
+        right: 0px;
+        width: 50%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+@keyframes special-coloring-left {
+    39.9% {
+        left: 0px;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+    }
+
+    40% {
+        left: 0px;
+        height: 70%;
+        border-radius: 0;
+    }
+
+    100% {
+        left: 0px;
+        width: 51%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+@keyframes special-coloring-font {
+    78% {
+        color: black;
+    }
+
+    100% {
+        color: white;
+    }
+
+}
