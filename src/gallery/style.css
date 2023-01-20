@@ -1,0 +1,64 @@
+.gallery {
+    padding: var(--section-padding) 0;
+    background-color: #ECECEC;
+}
+
+.gallery .boxes-container {
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px 40px;
+
+}
+
+.gallery .box {
+    padding: 15px;
+    background-color: white;
+    position: relative;
+}
+
+.gallery .box .image {
+    overflow: hidden;
+}
+
+.gallery .box img {
+    max-width: 100%;
+    transition: var(--main-transition);
+}
+
+.gallery .box:hover img {
+    transform: rotate(3deg) scale(105%);
+}
+
+.gallery .box .image::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(240, 240, 240, 0.297);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.gallery .box:hover .image::after{
+    animation: var(--main-transition) linear growing-shadow;
+}
+@keyframes growing-shadow {
+    0% {
+        width: 0;
+        height: 0;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*  @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name 
+animation: 3s ease-in 1s 2 reverse both paused slidein;
+
+ @keyframes duration | easing-function | delay | name 
+animation: 3s linear 1s slidein;
+
+ two animations 
+animation: 3s linear slidein, 3s ease-out 5s slideout; */
