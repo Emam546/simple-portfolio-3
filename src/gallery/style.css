@@ -1,6 +1,6 @@
 .gallery {
     padding: var(--section-padding) 0;
-    background-color: #ECECEC;
+    background-color: var(--section-background);
 }
 
 .gallery .boxes-container {

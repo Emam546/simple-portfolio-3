@@ -1,0 +1,92 @@
+.teamMembers{
+    padding: var(--section-padding) 0;
+    
+}
+.teamMembers .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minMax(300px,1fr));
+    gap: 30px 60px;
+    margin-top: 60px;
+}
+.teamMembers .box-container .box{
+    position: relative;
+    --margin-left:35px;
+    padding-bottom: 20px;
+}
+.teamMembers .box-container .box::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - var(--margin-left));
+    height: 100%;
+    background-color: #F3F3F3;
+    z-index: -1;
+}
+.teamMembers .box-container .box *{
+    background-color: transparent;
+    z-index: 1;
+}
+.teamMembers .box-container .box:hover .img-holder::after ,
+.teamMembers .box-container .box::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: var(--second-text-color);
+    opacity: 30%;
+
+}
+.teamMembers .box-container .box:hover::after{
+    animation-name: grow-overlay;
+    animation-duration: var(--main-transition);
+    animation-fill-mode: both;
+}
+@keyframes grow-overlay{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: calc(100% - var(--margin-left));
+    
+    }
+}
+.teamMembers .box-container .box .first-section{
+    display: flex;
+    justify-content: space-between;
+}
+.teamMembers .box-container .box .img-holder{
+    overflow: hidden;
+    border-radius: 10px;
+    flex-grow: 1;
+    position: relative;
+    z-index: 3;
+}
+
+.teamMembers .box-container .box .img-holder img{
+    width: 100%;
+    
+}
+.teamMembers .box-container .box:hover .img-holder::after{
+    width: 100%;
+}
+.teamMembers .box-container .box .social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:0 20px;
+}
+.teamMembers .box-container .box .social-icons i{
+    margin-top: 30px;
+}
+.teamMembers .box-container .box .text-container{
+    margin-left: var(--margin-left);
+    padding-left: 10px;
+}
+.teamMembers .box-container .box .text-container h1{
+    color: var(--main-color);
+    margin: 15px 0;
+    
+}

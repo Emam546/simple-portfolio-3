@@ -1,0 +1,98 @@
+.services{
+    padding: var(--section-padding) 0;
+    background-color: var(--section-background);
+    --second-color:#D5D5D5;
+    
+}
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 40px 40px;
+    margin-top: 30px;
+    counter-reset: boxes-counter;
+}
+.services .box{
+    box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+    background-color: white;
+    counter-increment: boxes-counter;
+    transition: var(--main-transition);
+    position: relative;
+}
+.services .box:hover{
+    transform: translateY(-10px);
+
+}
+.services .box::after{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5px;
+    width: 0%;
+    transition: var(--main-transition);
+}
+.services .box:hover::after{
+    width: 100%;
+}
+.services .box .badge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services .box .badge i{
+    font-size: 80px;
+    color:var(--second-color);
+    margin-top: 20px;
+}
+.services .box .badge h2{
+    color: var(--main-color);
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-size: 25px;
+}
+.services .box .tail{
+    background-color: #F9F9F9;
+    position: relative;
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.services .box .tail a{
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.services .box .tail::after {
+    content: "";
+    position: absolute;
+    background-color: #d5d5d5;
+    top: 0;
+    left: 80px;
+    width: 50px;
+    height: calc(100% + 0.4px);
+    transform: skewX(-30deg);
+}
+.services .box .tail::before {
+    content: "0" counter(boxes-counter);
+    position: absolute;
+    background-color: var(--main-color);
+    color: white;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}

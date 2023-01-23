@@ -45,7 +45,7 @@
 }
 
 .articles .box-container .box .text-container p {
-    color: #8F8F8F;
+    color: var(--second-text-color);
 }
 
 .articles .box-container .box .read-more-button {

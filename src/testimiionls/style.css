@@ -1,0 +1,42 @@
+.testimonials{
+    padding: var(--section-padding) 0;
+    background-color: var(--section-background);
+}
+.testimonials .box-container{
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 60px 30px;
+}
+.testimonials .box{
+    position: relative;
+    background-color: white;
+    padding: 20px 20px;
+}
+.testimonials .img-holder{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -0px;
+    top: -40px;
+    border: 10px solid var(--section-background);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.testimonials .img-holder img{
+    max-width: 100%;
+}
+
+.testimonials .text-container .sub-name{
+    margin: 9px 0;
+}
+.testimonials .text-container .start-rated{
+    margin-bottom: 9px;
+}
+.testimonials .text-container .start-rated i.fa-solid{
+    color: #FFC107;
+    font-size: 17px;
+}
+.testimonials .text-container .text-p{
+    color: var(--second-text-color);
+}

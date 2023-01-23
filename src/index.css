@@ -1,7 +1,8 @@
 :root {
     --main-color: #2196F3;
     --main-color-alt: #1787E0;
-    --section-color: #ECECEC;
+    --section-background: #ECECEC;
+    --second-text-color: #8F8F8F;
     --main-transition: .3s;
     --section-padding: 80px;
 }
@@ -52,4 +53,3 @@ ul {
         width: 1170px;
     }
 }
-
