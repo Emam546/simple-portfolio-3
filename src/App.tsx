@@ -8,6 +8,7 @@ import TESTIMONIALS from "./testimiionls"
 import TeamMembers from "./teamMembers"
 import { Services } from "./services"
 import Skills from "./skill"
+import HowItWorks from "./how-work"
 function App() {
   return <>
     <Header />
@@ -20,6 +21,7 @@ function App() {
       <TeamMembers />
       <Services />
       <Skills/>
+      <HowItWorks />
     </main>
   </>
 }
