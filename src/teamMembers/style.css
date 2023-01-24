@@ -6,7 +6,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fill,minMax(300px,1fr));
     gap: 30px 60px;
-    margin-top: 60px;
 }
 .teamMembers .box-container .box{
     position: relative;

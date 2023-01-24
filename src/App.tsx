@@ -9,6 +9,7 @@ import TeamMembers from "./teamMembers"
 import { Services } from "./services"
 import Skills from "./skill"
 import HowItWorks from "./how-work"
+import Events from "./events"
 function App() {
   return <>
     <Header />
@@ -22,6 +23,7 @@ function App() {
       <Services />
       <Skills/>
       <HowItWorks />
+      <Events />
     </main>
   </>
 }
