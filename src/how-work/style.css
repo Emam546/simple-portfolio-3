@@ -20,7 +20,11 @@
         display: none;
     }
 }
-
+.howItWorks .boxes-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+}
 .howItWorks .box{
     display: flex;
     justify-content: center;
@@ -55,6 +59,9 @@
     width: 64px;
     margin-right: 30px;
     
+}
+.howItWorks .box .text-container{
+    flex-shrink: 2;
 }
 .howItWorks .box .text-container h3{
     margin:7px 0;

@@ -5,6 +5,7 @@
     color: white;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 @media (max-width: 768px) {
@@ -52,7 +53,7 @@
         
     }
 }
-.sideDown-arrow{
+.landing .sideDown-arrow{
     position: absolute;
     color: var(--main-color);
     left: 50%;

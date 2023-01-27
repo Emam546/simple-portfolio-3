@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./style.css"
+import { Dots } from "../dots";
 export function Timer({ time, openTime }: { time: Date; openTime?: Date }) {
     function Holder({
         text,
@@ -90,8 +91,7 @@ export function Timer({ time, openTime }: { time: Date; openTime?: Date }) {
 export default function Events() {
     return (
         <div className="events">
-            <div className="dots-background left"></div>
-            <div className="dots-background right"></div>
+            <Dots />
             <div className="container">
                 <h2 className="special-heading">latest events</h2>
                 <div className="first-container">

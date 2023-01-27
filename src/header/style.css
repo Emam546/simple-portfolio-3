@@ -25,6 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: stretch;
+    flex-wrap: wrap;
 }
 
 .header .header-nav li {
@@ -87,6 +88,7 @@
     transition:transform var(--main-transition);
     transform: translateY(40%);
     background-color: white;
+    z-index: 100;
     
 }
 .header .sub-menu.active{

@@ -1,0 +1,126 @@
+.pricing {
+    padding: var(--section-padding) 0;
+    background-color: var(--section-background);
+}
+
+.pricing .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--box-grid-width-4), 1fr));
+    gap: 30px;
+}
+
+.pricing .box {
+    background-color: white;
+    text-align: center;
+    position: relative;
+}
+
+@media (min-width:1200px) {
+    .pricing .box.popular {
+        transform: translateY(-30px);
+    }
+}
+
+.pricing .box .box-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.pricing .box .icon {
+    font-size: 100px;
+    color: var(--main-color);
+    margin: 20px 0;
+}
+
+.pricing .box .price {
+    margin: 0;
+    color: var(--main-color);
+    font-size: 50px;
+}
+
+.pricing .box .price+p {
+    margin-top: 7px;
+    font-size: 14px;
+    color: var(--second-text-color);
+    text-transform: capitalize;
+}
+
+.pricing .box .price.dollar::before {
+    font-family: "Font Awesome 5 Free";
+    color: var(--main-color);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.pricing .box .box-features {
+    text-align: initial;
+    margin-top: 20px;
+}
+
+.pricing .box .box-features li {
+    padding: 20px 10px;
+    border-top: 1px solid #eee;
+}
+
+.pricing .box ul li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    margin-right: 10px;
+    font-weight: 900;
+    color: var(--main-color);
+}
+
+.pricing .box .price.dollar::before {
+    content: "\24";
+}
+
+.pricing .box .choose-button {
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    padding: 15px 15px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    font-weight: 700;
+    transition: var(--main-transition);
+}
+
+.pricing .box .choose-button:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+.pricing .most-popular{
+    --height:40px;
+    position: absolute;
+    top: 0;
+    height: var(--height);
+    display: flex;
+    align-items: center;
+    right: 30px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--main-color);
+    color: white;
+    transform: rotate(90deg) translateX(100%);
+    transform-origin: top right;
+    text-transform: capitalize;
+}
+.pricing .most-popular::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-style: solid;
+    border-color: var(--main-color);
+    border-right-color: white;
+    border-width: calc(var(--height)/2);
+    transform: translateX(80%);
+}
+.pricing .box:not(.popular) .most-popular{
+    display: none;
+}

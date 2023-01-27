@@ -28,7 +28,7 @@ export default function Header() {
                 <div
                     onMouseEnter={() => setState(true)}
                     onMouseLeave={() => setState(false)}
-                    className={`sub-menu  ${state && "active"}`}
+                    className={`sub-menu ${state && "active"}`}
                 >
                     <div className="img-holder">
                         <img src="./images/megamenu.png" alt="" />

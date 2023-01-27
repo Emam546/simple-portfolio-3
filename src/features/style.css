@@ -3,7 +3,7 @@
 }
 .features .boxes-container{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(var(--box-grid-width-4),1fr));
     gap: 30px 30px;
 }
 .features .boxes-container{
