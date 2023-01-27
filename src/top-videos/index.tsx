@@ -98,7 +98,7 @@ function VideoContainer({ url }: { url: string }) {
 }
 export function TopVideos({ url }: { url: string }) {
     return (
-        <div className="top-videos">
+        <div className="top-videos" id="top-videos">
             <div className="container">
                 <h2 className="special-heading">top videos</h2>
                 <VideoContainer url={url} />

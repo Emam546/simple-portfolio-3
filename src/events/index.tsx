@@ -90,12 +90,12 @@ export function Timer({ time, openTime }: { time: Date; openTime?: Date }) {
 }
 export default function Events() {
     return (
-        <div className="events">
+        <div className="events" id="events">
             <Dots />
             <div className="container">
                 <h2 className="special-heading">latest events</h2>
                 <div className="first-container">
-                    <img src="./images/events.png" alt="" />
+                    <img src="/images/events.png" alt="" />
                     <div className="content-container">
                         <Timer
                             time={new Date(1000 * 60 * 60 * 24 * 30 * 12 * 100)}

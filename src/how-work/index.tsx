@@ -1,7 +1,7 @@
 import "./style.css"
 export default function HowItWorks() {
     return (
-        <div className="howItWorks">
+        <div className="howItWorks" id="howItWorks">
             <div className="container">
                 <h2 className="special-heading">how it works</h2>
                 <div className="content-container">

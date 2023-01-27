@@ -1,7 +1,7 @@
 import "./style.css";
 export default function () {
     return (
-        <div className="stats overlay">
+        <div className="stats overlay" id="stats">
             <div className="container">
                 <h1 className="header-text">Our Awesome Stats</h1>
                 <div className="content-container">

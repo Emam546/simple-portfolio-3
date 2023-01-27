@@ -2,7 +2,7 @@ import { Dots } from "../dots";
 import "./style.css";
 export default function Pricing() {
     return (
-        <div className="pricing">
+        <div className="pricing" id="pricing">
             <Dots />
             <div className="container">
                 <div className="special-heading">pricing plans</div>

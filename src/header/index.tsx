@@ -8,13 +8,13 @@ export default function Header() {
                 <h2 className="heading-logo">Comment</h2>
                 <nav className="header-nav">
                     <ul>
-                        <a href="">
+                        <a href="#articles">
                             <li>Articles</li>
                         </a>
-                        <a href="">
-                            <li>gallary</li>
+                        <a href="#gallery">
+                            <li>gallery</li>
                         </a>
-                        <a href="">
+                        <a href="#features">
                             <li>Features</li>
                         </a>
                         <li
@@ -31,35 +31,35 @@ export default function Header() {
                     className={`sub-menu ${state && "active"}`}
                 >
                     <div className="img-holder">
-                        <img src="./images/megamenu.png" alt="" />
+                        <img src="/images/megamenu.png" alt="" />
                     </div>
                     <div className="sub-columns .active">
                         <ul>
-                            <a href="">
+                            <a href="#testimonials">
                                 <li>
                                     <i className="fa-regular fa-comments"></i>{" "}
                                     Testimonials{" "}
                                 </li>
                             </a>
-                            <a href="">
+                            <a href="#teamMembers">
                                 <li>
                                     <i className="fa-regular fa-user"></i> Team
                                     Members
                                 </li>
                             </a>
-                            <a href="">
+                            <a href="services">
                                 <li>
                                     <i className="fa-solid fa-server"></i>{" "}
                                     Services{" "}
                                 </li>
                             </a>
-                            <a href="">
+                            <a href="#skills">
                                 <li>
                                     <i className="fa-regular fa-circle-check"></i>{" "}
                                     Our Skills{" "}
                                 </li>
                             </a>
-                            <a href="">
+                            <a href="#howItWorks">
                                 <li>
                                     <i className="fa-regular fa-clipboard"></i>{" "}
                                     How It Works{" "}
@@ -67,31 +67,31 @@ export default function Header() {
                             </a>
                         </ul>
                         <ul>
-                            <a href="">
+                            <a href="#events">
                                 <li>
                                     <i className="fa-regular fa-calendar"></i>{" "}
                                     Events{" "}
                                 </li>
                             </a>
-                            <a href="">
+                            <a href="#pricing">
                                 <li>
                                     <i className="fa-solid fa-money-bill-1"></i>{" "}
                                     Pricing{" "}
                                 </li>
                             </a>
-                            <a href="">
+                            <a href="#top-videos">
                                 <li>
                                     <i className="fa-regular fa-circle-play"></i>{" "}
                                     Top Videos
                                 </li>
                             </a>
-                            <a href="">
+                            <a href="#stats">
                                 <li>
                                     <i className="fa-solid fa-chart-column"></i>{" "}
                                     Stats{" "}
                                 </li>
                             </a>
-                            <a href="">
+                            <a href="#discount">
                                 <li>
                                     <i className="fa-solid fa-percent"></i>{" "}
                                     Request A Discount

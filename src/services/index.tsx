@@ -1,7 +1,7 @@
 import "./style.css";
 export function Services() {
     return (
-        <div className="services">
+        <div className="services" id="services">
             <div className="container">
                 <h2 className="special-heading">services</h2>
                 <div className="box-container">

@@ -1,5 +1,5 @@
 .landing {
-    background-image: url("./images/landing.jpg");
+    background-image: url("/images/landing.jpg");
     height: calc(100vh - 60px);
     background-size: cover;
     color: white;

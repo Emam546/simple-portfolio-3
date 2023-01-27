@@ -14,6 +14,7 @@ import Pricing from "./pricing";
 import { TopVideos } from "./top-videos";
 import Stats from "./stats";
 import Discount from "./Discount";
+import Footer from "./footer";
 function App() {
     return (
         <>
@@ -34,6 +35,7 @@ function App() {
                 <Stats />
                 <Discount />
             </main>
+            <Footer />
         </>
     );
 }

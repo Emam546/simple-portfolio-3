@@ -15,6 +15,7 @@
     background-color: transparent;
     z-index: 20;
     margin-bottom: 80px;
+    word-break: break-all;
 }
 
 .special-heading::before,

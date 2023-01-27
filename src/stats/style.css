@@ -1,6 +1,6 @@
 .stats {
     padding: var(--section-padding) 0;
-    background-image: url("./images/stats.jpg");
+    background-image: url("/images/stats.jpg");
     background-size: cover;
 }
 

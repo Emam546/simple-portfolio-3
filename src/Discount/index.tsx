@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import "./style.css";
-const images = ["./images/discount.png", "./images/discount2.png"];
+const images = ["/images/discount.png", "/images/discount2.png"];
 export default function Discount() {
     const [i, setI] = useState(0);
     useEffect(() => {
         setI(Math.round(1 * Math.random()));
     }, []);
     return (
-        <div className="discount">
+        <div className="discount" id="discount">
             <div className="discount-info overlay">
                 <div className="text-container">
                     <h1>We Have A Discount</h1>

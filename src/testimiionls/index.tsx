@@ -20,13 +20,13 @@ function Stars({
 }
 export default function TESTIMONIALS() {
     return (
-        <div className="testimonials">
+        <div className="testimonials" id="testimonials">
             <div className="container">
                 <h2 className="special-heading">testimonials</h2>
                 <div className="box-container">
                     <div className="box">
                         <div className="img-holder">
-                            <img src="./images/avatar-01.png" alt="" />
+                            <img src="/images/avatar-01.png" alt="" />
                         </div>
                         <div className="text-container">
                             <h3>Mohamed Farag</h3>
@@ -41,7 +41,7 @@ export default function TESTIMONIALS() {
                     </div>
                     <div className="box">
                         <div className="img-holder">
-                            <img src="./images/avatar-02.png" alt="" />
+                            <img src="/images/avatar-02.png" alt="" />
                         </div>
                         <div className="text-container">
                             <h3>Mohamed Farag</h3>
@@ -56,7 +56,7 @@ export default function TESTIMONIALS() {
                     </div>
                     <div className="box">
                         <div className="img-holder">
-                            <img src="./images/avatar-03.png" alt="" />
+                            <img src="/images/avatar-03.png" alt="" />
                         </div>
                         <div className="text-container">
                             <h3>Mohamed Farag</h3>
@@ -71,7 +71,7 @@ export default function TESTIMONIALS() {
                     </div>
                     <div className="box">
                         <div className="img-holder">
-                            <img src="./images/avatar-04.png" alt="" />
+                            <img src="/images/avatar-04.png" alt="" />
                         </div>
                         <div className="text-container">
                             <h3>Mohamed Farag</h3>
@@ -86,7 +86,7 @@ export default function TESTIMONIALS() {
                     </div>
                     <div className="box">
                         <div className="img-holder">
-                            <img src="./images/avatar-05.png" alt="" />
+                            <img src="/images/avatar-05.png" alt="" />
                         </div>
                         <div className="text-container">
                             <h3>Mohamed Farag</h3>
@@ -101,7 +101,7 @@ export default function TESTIMONIALS() {
                     </div>
                     <div className="box">
                         <div className="img-holder">
-                            <img src="./images/avatar-06.png" alt="" />
+                            <img src="/images/avatar-06.png" alt="" />
                         </div>
                         <div className="text-container">
                             <h3>Mohamed Farag</h3>
